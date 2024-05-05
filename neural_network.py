@@ -124,9 +124,9 @@ class NeuralNetwork:
             if X_test is not None and y_test is not None:
                 loss_t = self.calculate_loss(X_test, y_test)
                 self.test_loss.append(loss_t)
-                print(f"epoch {ep}; train loss {loss}; test_loss {loss_t}")
-            else:    
-                print(f"epoch {ep}; train loss {loss}")
+                #print(f"epoch {ep}; train loss {loss}; test_loss {loss_t}")
+            #else:    
+                #print(f"epoch {ep}; train loss {loss}")
             err = loss
             self.train_loss.append(err)
         
